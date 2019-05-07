@@ -10,5 +10,15 @@
 	<atom:link href="https://leolcling.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
+    <item>
+      <title>Dissertation: Long sentence translation</title>
+      <link>https://leolcling.github.io/dissertation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://leolcling.github.io/dissertation/</guid>
+      <description>Objective This dissertation studies the causes of poor quality translation when translating long sentences with NMT systems, and explores the possibility of incorporating SMT techniques into NMT systems to tackle the long sentence translation problem .
+Progress    Date Item Status Remarks     &amp;lt;2019-03-02 Sat&amp;gt; Data Collection Done    &amp;lt;2019-04-28 Sun&amp;gt; Literature Review Done     Detail Proposol In Progress     Model construction In Progress Break up sentence by making use of syntactic tree          Reference Articles General  ✎ ⌘ 2016 Modeling Coverage for Neural Machine Translation Tu, Zhaopeng and Lu, Zhengdong and Liu, Yang and Liu, Xiaohua and Li, Hang article tu16_model_cover_neural_machin_trans</description>
+    </item>
+    
   </channel>
 </rss>
