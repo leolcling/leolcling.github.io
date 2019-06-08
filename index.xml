@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>website</title>
+    <title>Leo.L</title>
     <link>https://www.leolcling.com/</link>
-    <description>Recent content on website</description>
+    <description>Recent content on Leo.L</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Wed, 05 Jun 2019 17:55:56 +0800</lastBuildDate>
     
 	<atom:link href="https://www.leolcling.com/index.xml" rel="self" type="application/rss+xml" />
     
@@ -13,10 +14,10 @@
     <item>
       <title>Dissertation: Long sentence translation</title>
       <link>https://www.leolcling.com/dissertation/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 05 Jun 2019 17:55:56 +0800</pubDate>
       
       <guid>https://www.leolcling.com/dissertation/</guid>
-      <description>Objective This dissertation studies the causes of poor quality translation when translating long sentences with NMT systems, and explores the possibility of incorporating SMT techniques into NMT systems to tackle the long sentence translation problem .
+      <description>Objective This dissertation studies the causes of poor quality translation when translating long sentences with NMT systems, and explores the possibility of incorporating SMT techniques into NMT systems to tackle the long sentence translation problem.
 Progress    Date Item Status Remarks     &amp;lt;2019-03-02 Sat&amp;gt; Data Collection Done    &amp;lt;2019-04-28 Sun&amp;gt; Literature Review Done     Detail Proposal In Progress     Model construction In Progress Break up sentence by making use of syntactic tree          Reference Articles General  ✎ ⌘ 2016 Modeling Coverage for Neural Machine Translation Tu, Zhaopeng and Lu, Zhengdong and Liu, Yang and Liu, Xiaohua and Li, Hang article tu16_model_cover_neural_machin_trans</description>
     </item>
     
