@@ -6,10 +6,20 @@
     <description>Recent content on Leo.L</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 05 Jun 2019 17:55:56 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://www.leolcling.com/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://www.leolcling.com/about/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://www.leolcling.com/about/</guid>
+      <description>Hi, I am Leo.
+I used to ask a lot of questions as a child, and the answer my parents gave me would often lead to more questions. Be it silly question like &amp;ldquo;Why I need to breathe?&amp;rdquo; or question like &amp;ldquo;How tall is the sky?&amp;rdquo;, my craving for knowledge just wouldn&amp;rsquo;t stop me from being an annoying kid. It is not hard to imagine my favorite TV show was &amp;ldquo;How it&amp;rsquo;s made&amp;rdquo; from Discovery Channel.</description>
+    </item>
     
     <item>
       <title>Dissertation: Long sentence translation</title>
