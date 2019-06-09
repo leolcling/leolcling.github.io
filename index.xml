@@ -2,33 +2,33 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leo.L</title>
-    <link>https://www.leolcling.com/</link>
+    <link>https://leolcling.com/</link>
     <description>Recent content on Leo.L</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 09 Jun 2019 23:38:09 +0800</lastBuildDate>
     
-	<atom:link href="https://www.leolcling.com/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leolcling.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>About</title>
-      <link>https://www.leolcling.com/about/</link>
-      <pubDate>Sat, 08 Jun 2019 00:00:00 +0800</pubDate>
-      
-      <guid>https://www.leolcling.com/about/</guid>
-      <description>Hi, I am Leo.
-I used to ask a lot of questions as a child, and the answer my parents gave me would often lead to more questions. Be it silly question like &amp;ldquo;Why I need to breathe?&amp;rdquo; or question like &amp;ldquo;How tall is the sky?&amp;rdquo;, my craving for knowledge just wouldn&amp;rsquo;t stop me from being an annoying kid. It is not hard to imagine my favorite TV show was &amp;ldquo;How it&amp;rsquo;s made&amp;rdquo; from Discovery Channel.</description>
-    </item>
     
     <item>
       <title>Dissertation: Long sentence translation</title>
-      <link>https://www.leolcling.com/dissertation/</link>
-      <pubDate>Wed, 05 Jun 2019 17:55:56 +0800</pubDate>
+      <link>https://leolcling.com/dissertation/</link>
+      <pubDate>Sun, 09 Jun 2019 23:38:09 +0800</pubDate>
       
-      <guid>https://www.leolcling.com/dissertation/</guid>
+      <guid>https://leolcling.com/dissertation/</guid>
       <description>Objective This dissertation studies the causes of poor quality translation when translating long sentences with NMT systems, and explores the possibility of incorporating SMT techniques into NMT systems to tackle the long sentence translation problem.
-Progress    Date Item Status Remarks     &amp;lt;2019-03-02 Sat&amp;gt; Data Collection Done    &amp;lt;2019-04-28 Sun&amp;gt; Literature Review Done     Detail Proposal In Progress     Model construction In Progress Break up sentence by making use of syntactic tree          Reference Articles General  ✎ ⌘ 2016 Modeling Coverage for Neural Machine Translation Tu, Zhaopeng and Lu, Zhengdong and Liu, Yang and Liu, Xiaohua and Li, Hang article tu16_model_cover_neural_machin_trans</description>
+Progress    Date Item Status Remarks     &amp;lt;2019-03-02 Sat&amp;gt; Data Collection Done    &amp;lt;2019-04-28 Sun&amp;gt; Literature Review Done    &amp;lt;2019-05-28 Tue&amp;gt; Detail Proposal Done     Model: Sementation In Progress Break up sentence by making use of syntactic tree    Model: Composition Waiting Compose/ reorder the translated segments    Problems The quality of word segmentation on UN corpus is poor Most grammar parsers require setting up grammar rules; and they are domain specific  ⌘ 2014 Grammar As a Foreign Language Vinyals, Oriol and Kaiser, Lukasz and Koo, Terry and Petrov, Slav and Sutskever, Ilya and Hinton, Geoffrey article vinyals14_gramm_as_foreig_languag  Vocab size might affect the performance of translation, yet no standard on vocab size usage can be found Encounter Memory error when using datasets.</description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://leolcling.com/about/</link>
+      <pubDate>Sat, 08 Jun 2019 00:00:00 +0800</pubDate>
+      
+      <guid>https://leolcling.com/about/</guid>
+      <description>Hi, I am Leo.
+I used to ask a lot of questions as a child, and the answer my parents gave me would often lead to more questions. Be it silly question like &amp;ldquo;Why I need to breathe?&amp;rdquo; or question like &amp;ldquo;How tall is the sky?&amp;rdquo;, my craving for knowledge just wouldn&amp;rsquo;t stop me from being an annoying kid. It is not hard to imagine my favorite TV show was &amp;ldquo;How it&amp;rsquo;s made&amp;rdquo; from Discovery Channel.</description>
     </item>
     
   </channel>
