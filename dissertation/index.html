@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <META HTTP-EQUIV="refresh" CONTENT="15">
+  <meta name="generator" content="Hugo 0.55.3" />
+  <link rel="stylesheet" href="https://leolcling.com/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  <link rel="stylesheet" href="https://leolcling.com/css/cayman.a07effcfadeb6134d3e16a33118afec6ef8022b4c8e492a2577d9f41d1ac12b0.css">
+  
+  
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.css" integrity="sha384-dbVIfZGuN1Yq7/1Ocstc1lUEm+AT+/rCkibIcC/OmWo5f0EA48Vf8CytHzGrSwbQ" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/katex.min.js" integrity="sha384-2BKqo+exmr9su6dir+qCw08N2ZKRucY4PrGQPPWU1A7FtlCGjmEGFqXCv5nyM5Ij" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.10.1/dist/contrib/auto-render.min.js" integrity="sha384-kWPLUVMOks5AQFrykwIup5lo0m3iMkkHrD0uJ4H5cjeGihAutqP0yW0J6dpFiVkI" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+
+  <title>Dissertation: Long sentence translation | Leo.L</title>
+</head>
+
+<body>
+  <section class="page-header">
+  <h1 class="project-name">
+<a class="navigation-title" href="/">Leo.L</a>
+  </h1>
+  <h2 class="project-tagline">
+    
+  </h2>
+    
+      <div class="avatar"><img src="https://leolcling.com/images/pugG.gif" alt="avatar"></div>
+    
+<br>
+  <nav>
+    
+    
+      
+      
+      
+      
+      <a href="/about" class="btn">About</a>
+    
+      
+      
+      
+      
+      <a href="/posts" class="btn">Blog</a>
+    
+      
+      
+      
+      
+      <a href="/porfolio" class="btn">Portfolio</a>
+    
+      
+      
+      
+      
+      <a href="/index.xml" class="btn">RSS</a>
+    
+  </nav>
+
+</section>
+
+  <section class="main-content">
+    
+  <h1>Dissertation: Long sentence translation</h1>
+  
+
+<hr />
+
+<h2 id="objective">Objective</h2>
+
+<p>This dissertation studies the causes of poor quality translation when translating long sentences with NMT systems, and explores the possibility of incorporating SMT techniques into NMT systems to tackle the long sentence translation problem.</p>
+
+<h2 id="progress">Progress</h2>
+
+<table>
+<thead>
+<tr>
+<th>Date</th>
+<th>Item</th>
+<th>Status</th>
+<th>Remarks</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-03-02 Sat&gt;</span></span></td>
+<td>Data Collection</td>
+<td>Done</td>
+<td></td>
+</tr>
+
+<tr>
+<td><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-04-28 Sun&gt;</span></span></td>
+<td>Literature Review</td>
+<td>Done</td>
+<td></td>
+</tr>
+
+<tr>
+<td><span class="timestamp-wrapper"><span class="timestamp">&lt;2019-05-28 Tue&gt;</span></span></td>
+<td>Detail Proposal</td>
+<td>Done</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td>Model: Sementation</td>
+<td>In Progress</td>
+<td>Break up sentence by making use of syntactic tree</td>
+</tr>
+
+<tr>
+<td></td>
+<td>Model: Composition</td>
+<td>Waiting</td>
+<td>Compose/ reorder the translated segments</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="problems">Problems</h2>
+
+<ol class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> The quality of word segmentation on UN corpus is poor</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Most grammar parsers require setting up grammar rules; and they are domain specific
+
+<ul>
+<li>⌘ 2014 Grammar As a Foreign Language Vinyals, Oriol and Kaiser, Lukasz and Koo, Terry and Petrov, Slav and Sutskever, Ilya and Hinton, Geoffrey article vinyals14_gramm_as_foreig_languag</li>
+</ul></label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Vocab size might affect the performance of translation, yet no standard on vocab size usage can be found</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Encounter <code>Memory error</code> when using <code>datasets.TranslationDataset.splits</code>
+
+<ul>
+<li>Make <code>TranslationDataset</code> a generator (<a href="https://colab.research.google.com/drive/11yqYCQJiwIevZguXl7x9Oo6dpl7keRpy">Example</a>) (make sure to use an Iterator without (global) shuffling or sorting (so for instance BucketIterator with sort=False and shuffle=False)</li>
+</ul></label></li>
+</ol>
+
+<h2 id="data">Data</h2>
+
+<p><strong>English-Chinese parallel corpus:</strong></p>
+
+<ul>
+<li>United Nation Parallel corpus (Training)
+
+<ul>
+<li>15,886,041 parallel corpus</li>
+</ul></li>
+<li>News-commentary-v13 (Validation)
+
+<ul>
+<li>252,777 parallel corpus</li>
+</ul></li>
+</ul>
+
+<p><strong>Preprocessing:</strong></p>
+
+<ol>
+<li>BPE
+Encode Source English sentences with <code>SentencePiece</code>. The <code>SentencePiece</code> model was trained on UN corpus only.</li>
+</ol>
+<div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">spm<span style="color:#666">.</span>SentencePieceTrainer<span style="color:#666">.</span>Train(f<span style="color:#ba2121">&#34;--input={train_data} --model_prefix=bpe_en_zh --vocab_size=32000 --max_sentence_length=100 --model_type=bpe&#34;</span>)</code></pre></div>
+<ol>
+<li>Chinese word segmentation
+Segment Chinese sentences with <code>tpHULAC</code>.</li>
+</ol>
+
+<p><code>torchtext</code> was used to handle other preprocessing steps (e.g. read data, tokenize word, build vocab, create batch, etc)</p>
+
+<h2 id="model">Model</h2>
+
+<h3 id="1-dot-segmentation-of-input-sentence">1. Segmentation of input sentence</h3>
+
+<p>Idea:</p>
+
+<h2 id="reference-articles">Reference Articles</h2>
+
+<h3 id="general">General</h3>
+
+<ul>
+<li><p>✎ ⌘ 2016 Modeling Coverage for Neural Machine Translation Tu, Zhaopeng and Lu, Zhengdong and Liu, Yang and Liu, Xiaohua and Li, Hang article tu16_model_cover_neural_machin_trans</p></li>
+
+<li><p>✎ ⌘ 2017 Attention Is All You Need Vaswani, Ashish and Shazeer, Noam and Parmar, Niki and Uszkoreit, Jakob and Jones, Llion and Gomez, Aidan N. and Kaiser, Lukasz and Polosukhin, Illia article vaswani17_atten_is_all_you_need</p></li>
+</ul>
+
+<h3 id="divide-and-conquer">Divide and Conquer</h3>
+
+<ul>
+<li>✎ ⌘ 2016 Kuang, Shaohui and Xiong, Deyi Automatic long sentence segmentation for neural machine translation incollection kuang2016automatic</li>
+<li>⌘ 2018 Unsupervised Word Segmentation From Speech With Attention Godard, Pierre and Zanon-Boito, Marcely and Ondel, Lucas and Berard, Alexandre and Yvon, Fran\ccois and Villavicencio, Aline and Besacier, Laurent article godard18_unsup_word_segmen_from_speec_with_atten</li>
+</ul>
+
+<h3 id="phrase-based-translation">Phrase-based translation</h3>
+
+<ul>
+<li><p>✎ ⌘ 2015 Segmental Recurrent Neural Networks Kong, Lingpeng and Dyer, Chris and Smith, Noah A. article kong15_segmen_recur_neural_networ</p></li>
+
+<li><p>✎ ⌘ 2017 Translating Phrases in Neural Machine Translation Wang, Xing and Tu, Zhaopeng and Xiong, Deyi and Zhang, Min article wang17_trans_phras_neural_machin_trans</p></li>
+
+<li><p>✎ ⌘ 2017 Sequence Modeling Via Segmentations Wang, Chong and Wang, Yining and Huang, Po-Sen and Mohamed, Abdelrahman and Zhou, Dengyong and Deng, Li article wang17_sequen_model_via_segmen</p></li>
+
+<li><p>✎ ⌘ 2017 Towards Neural Phrase-Based Machine Translation Huang, Po-Sen and Wang, Chong and Huang, Sitao and Zhou, Dengyong and Deng, Li article huang17_towar_neural_phras_based_machin_trans</p></li>
+
+<li><p>✎ ⌘ 2018 Neural Phrase-To-Phrase Machine Translation Feng, Jiangtao and Kong, Lingpeng and Huang, Po-Sen and Wang, Chong and Huang, Da and Mao, Jiayuan and Qiao, Kan and Zhou, Dengyong article feng18_neural_phras_to_phras_machin_trans</p></li>
+</ul>
+
+<h3 id="syntax-based-translation">Syntax-based translation</h3>
+
+<ul>
+<li><p>✎ ⌘ 2018 A Tree-Based Decoder for Neural Machine Translation Wang, Xinyi and Pham, Hieu and Yin, Pengcheng and Neubig, Graham article wang18_tree_based_decod_neural_machin_trans</p></li>
+
+<li><p>✎ ⌘ 2018 Top-Down Tree Structured Decoding With Syntactic Connections for Neural Machine Translation and Parsing Gū, Jetic and Shavarani, Hassan S. and Sarkar, Anoop article gū18_top_down_tree_struc_decod</p></li>
+</ul>
+
+
+    <footer class="site-footer">
+  <span class="site-footer-credits">
+    
+  </span>
+</footer>
+
+  </section>
+  
+  
+
+</body>
+</html>
