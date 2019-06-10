@@ -177,6 +177,59 @@ Segment Chinese sentences with <code>tpHULAC</code>.</li>
 
 <p><code>torchtext</code> was used to handle other preprocessing steps (e.g. read data, tokenize word, build vocab, create batch, etc)</p>
 
+<p><strong>Parsing:</strong></p>
+
+<p>There are many options to parse sentences:</p>
+
+<ol>
+<li><p><a href="https://pypi.org/project/bllipparser/">BLLIP parser</a> (Charniak-Johnson Parser)</p>
+
+<p><em>Strength:</em></p>
+
+<ol>
+<li>Written in C++ so it is fast</li>
+<li>python module does not need to admin right to install (easier to install in GPU machine)</li>
+<li>state-of-the-art accuracy with multiple pretrained parsing model avaliable</li>
+</ol>
+
+<p><em>Weakness:</em></p>
+
+<ol>
+<li>Only support English</li>
+</ol></li>
+</ol>
+
+<!--listend-->
+
+<ol class="org-ol">
+<li value="2">. [Berkeley Parser](https://github.com/slavpetrov/berkeleyparser)
+
+_Strength:_
+
+1.  Written in Java, also fast
+2.  provide python module
+3.  Support many languages including English and Chinese
+4.  state-of-the-art accuracy
+
+_Weakness:_
+
+1.  Require Java</li>
+
+<li value="3">[SyntaxNet](https://ai.googleblog.com/2016/05/announcing-syntaxnet-worlds-most.html)
+
+_Strength:_
+
+1.  Fast
+2.  State-of-the-art in 2016
+3.  Use neural network to parse English text
+4.  provide pretrained model for English
+
+_Weakness_:
+
+1.  Implemented in TensorFlow and it is not easy to intall in GPU machine (need to confirm)
+2.  Does not support python3 (need to confirm)</li>
+</ol>
+
 <h2 id="model">Model</h2>
 
 <h3 id="1-dot-segmentation-of-input-sentence">1. Segmentation of input sentence</h3>
