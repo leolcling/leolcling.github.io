@@ -144,7 +144,6 @@
 <ul>
 <li>Make <code>TranslationDataset</code> a generator (<a href="https://colab.research.google.com/drive/11yqYCQJiwIevZguXl7x9Oo6dpl7keRpy">Example</a>) (make sure to use an Iterator without (global) shuffling or sorting (so for instance BucketIterator with sort=False and shuffle=False)</li>
 </ul></label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Should one use pre-train word embedding?</label></li>
 </ol>
 
 <h2 id="data">Data</h2>
@@ -250,32 +249,16 @@ Segment Chinese sentences with <code>tpHULAC</code>.</li>
 <p><strong>Idea:</strong></p>
 
 <ol>
-<li>This will be a transformer based model. Idealy the ecoder will be applied on each sentence segments in a style like position-wise linear layer inside transformer. To find the position to split a long sentence into segments, I propose to make use of self-attention vectors \(Z\) and find the dot product of \(Z\) and a segmentation matrix \(W_s\). A sigmoid function will be applied to the result element-wise. This will indicate the probability to split the sentence.</li>
+<li>This will be a transformer based model. Idealy the ecoder will be applied on each sentence segments in a style like position-wise linear layer inside transformer. To find the position to split a long sentence into segments, I propose to make use of self-attention vectors \(V\) and find the dot product of \(V\) and a segmentation matrix \(W_s\). A sigmoid function will be applied to the result element-wise. This will indicate the probability to split the sentence.</li>
 </ol>
 
-<p>The syntax information can be embedded into the input by summing with the input represetation and position embedding (like the segment embedding in BERT).</p>
-
-<figure>
-    <img src="/images/input_rep.png"
-         alt="Figure 1: input representation"/> <figcaption>
-            <p>Figure 1: input representation</p>
-        </figcaption>
-</figure>
-
-
-<figure>
-    <img src="/images/segment_split.png"
-         alt="Figure 2: generate split pobabilities"/> <figcaption>
-            <p>Figure 2: generate split pobabilities</p>
-        </figcaption>
-</figure>
-
+<p>The POS tag information can be embedded into the input by summing with the input embedding and position embedding (like the segment embedding in BERT).</p>
 
 <p><strong>Problems</strong></p>
 
 <ul>
 <li>Sigmoid function is used because it allows gradient optimization. However, how to convert the result to segments remain unclear. Idealy this would be a soft segmentation but how to apply the consecutive constraint would need more study</li>
-<li>POS is word-level. This limit the input to be word-level</li>
+<li>POS tag is word-level. This limit the input to be word-level encoded</li>
 </ul>
 
 <h2 id="reference-articles">Reference Articles</h2>

@@ -183,6 +183,7 @@ sub {
 
 img {
   border: 0;
+
 }
 
 /**
@@ -202,6 +203,22 @@ svg:not(:root) {
 
 figure {
   margin: 1em 40px;
+  display: inline-block;
+  color: LightCoral;
+  font-size: smaller;
+
+}
+
+figure img {
+    vertical-align: top;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+
+figure figcaption {
+    text-align: center;
 }
 
 /**
