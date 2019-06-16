@@ -132,12 +132,8 @@
 <h2 id="problems">Problems</h2>
 
 <ol class="task-list">
-<li><label><input type="checkbox" disabled class="task-list-item"> The quality of word segmentation on UN corpus is poor</label></li>
-<li><label><input type="checkbox" disabled class="task-list-item"> Most grammar parsers require setting up grammar rules; and they are domain specific
-
-<ul>
-<li>⌘ 2014 Grammar As a Foreign Language Vinyals, Oriol and Kaiser, Lukasz and Koo, Terry and Petrov, Slav and Sutskever, Ilya and Hinton, Geoffrey article vinyals14_gramm_as_foreig_languag</li>
-</ul></label></li>
+<li><label><input type="checkbox" checked disabled class="task-list-item"> Most grammar parsers require setting up grammar rules; and they are domain specific
+<strong>solution:</strong> Found pre-trained model</label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Vocab size might affect the performance of translation, yet no standard on vocab size usage can be found</label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Encounter <code>Memory error</code> when using <code>datasets.TranslationDataset.splits</code>
 
@@ -145,6 +141,8 @@
 <li>Make <code>TranslationDataset</code> a generator (<a href="https://colab.research.google.com/drive/11yqYCQJiwIevZguXl7x9Oo6dpl7keRpy">Example</a>) (make sure to use an Iterator without (global) shuffling or sorting (so for instance BucketIterator with sort=False and shuffle=False)</li>
 </ul></label></li>
 <li><label><input type="checkbox" disabled class="task-list-item"> Should one use pre-train word embedding?</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> It took unreasonable long time to parse sentences</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> The UN corpus data is not as clean as one thought</label></li>
 </ol>
 
 <h2 id="data">Data</h2>
@@ -157,6 +155,11 @@
 <ul>
 <li>15,886,041 parallel corpus</li>
 </ul></li>
+</ul>
+
+<p><em>#Remark: Probably need further cleansing (e.g. remove single word sentences, remove parentheses, etc)</em></p>
+
+<ul>
 <li>News-commentary-v13 (Validation)
 
 <ul>
@@ -183,7 +186,7 @@ Segment Chinese sentences with <code>tpHULAC</code>.</li>
 <p>There are many options to parse sentences:</p>
 
 <ul>
-<li><p><a href="https://pypi.org/project/bllipparser/">BLLIP parser</a> (Charniak-Johnson Parser)</p>
+<li><p><a href="https://pypi.org/project/bllipparser/">BLLIP parser</a> (Charniak-Johnson Parser) [Currently using]</p>
 
 <p><em>Strength:</em></p>
 
@@ -273,9 +276,14 @@ Segment Chinese sentences with <code>tpHULAC</code>.</li>
 
 <p><strong>Problems</strong></p>
 
+<ul class="task-list">
+<li><label><input type="checkbox" disabled class="task-list-item"> Sigmoid function is used because it allows gradient optimization. However, how to convert the result to segments remain unclear. Idealy this would be a soft segmentation but how to apply the consecutive constraint would need more study</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> POS is word-level. This limit the input to be word-level</label></li>
+<li><label><input type="checkbox" disabled class="task-list-item"> Need external parser to parse sentences before translating
+
 <ul>
-<li>Sigmoid function is used because it allows gradient optimization. However, how to convert the result to segments remain unclear. Idealy this would be a soft segmentation but how to apply the consecutive constraint would need more study</li>
-<li>POS is word-level. This limit the input to be word-level</li>
+<li>⌘ 2014 Grammar As a Foreign Language Vinyals, Oriol and Kaiser, Lukasz and Koo, Terry and Petrov, Slav and Sutskever, Ilya and Hinton, Geoffrey article vinyals14_gramm_as_foreig_languag</li>
+</ul></label></li>
 </ul>
 
 <h2 id="reference-articles">Reference Articles</h2>
