@@ -153,11 +153,39 @@
 <li>United Nation Parallel corpus (Training)
 
 <ul>
-<li>15,886,041 parallel corpus</li>
+<li>12,808,505 parallel corpus</li>
 </ul></li>
 </ul>
 
 <p><em>#Remark: Probably need further cleansing (e.g. remove single word sentences, remove parentheses, etc)</em></p>
+
+<p>Source Sentence length Count
+(0, 10]        2437711
+(10, 20]       2679393
+(20, 30]       2851513
+(30, 40]       2102916
+(40, 50]       1244587
+(50, 70]       1023863
+(70, 100]       352058
+(100, 150]       91667
+(150, 200]       14785
+(200, 300]        6382
+(300, 500]        3317
+(500, 1000]        294</p>
+
+<p>Target Sentence length count
+(0, 10]        2606235
+(10, 20]       3081604
+(20, 30]       2968421
+(30, 40]       1983069
+(40, 50]       1065378
+(50, 70]        784707
+(70, 100]       239190
+(100, 150]       59949
+(150, 200]       10803
+(200, 300]        6099
+(300, 500]        2705
+(500, 1000]        479</p>
 
 <ul>
 <li>News-commentary-v13 (Validation)
@@ -176,7 +204,7 @@ Encode Source English sentences with <code>SentencePiece</code>. The <code>Sente
 <div class="highlight"><pre style=";-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">spm<span style="color:#666">.</span>SentencePieceTrainer<span style="color:#666">.</span>Train(f<span style="color:#ba2121">&#34;--input={train_data} --model_prefix=bpe_en_zh --vocab_size=32000 --max_sentence_length=100 --model_type=bpe&#34;</span>)</code></pre></div>
 <ol>
 <li>Chinese word segmentation
-Segment Chinese sentences with <code>tpHULAC</code>.</li>
+Segment Chinese sentences with <code>tHULAC</code>.</li>
 </ol>
 
 <p><code>torchtext</code> was used to handle other preprocessing steps (e.g. read data, tokenize word, build vocab, create batch, etc)</p>
