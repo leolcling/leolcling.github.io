@@ -5,22 +5,10 @@
     <description>Recent content on Leo.L</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 13 Apr 2020 19:15:33 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Jun 2019 00:00:00 +0800</lastBuildDate>
     
         <atom:link href="https://leolcling.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-
-    <item>
-      <title></title>
-      <link>https://leolcling.com/posts/blog/</link>
-      <pubDate>Mon, 13 Apr 2020 19:15:33 +0800</pubDate>
-      
-      <guid>https://leolcling.com/posts/blog/</guid>
-      <description>Blog Ideas TODO ELI5: Key exchange TODO ELI5: Where does logistic function come from? TODO Eli5: Batch normalization TODO Eli5: L1/L2 regularization and its relationship with prior distribution L2 normalization: From bayes formula -&amp;gt; use normal prior -&amp;gt; deduct the minimization formula which show L2 regularization (note that this is just a point estimation of parameter)
-TODO Multistep RNN in pytorch DONE About Hi, I am Leo.
-I used to ask a lot of questions as a child, and the answer my parents gave me would often lead to more questions.</description>
-    </item>
     
   </channel>
 </rss>
